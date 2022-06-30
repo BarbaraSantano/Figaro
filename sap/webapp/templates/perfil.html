@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+          <th>Telefono</th>
+          <th>Lecciones</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for x in profesor %}
+      <tr>
+        <td>{{x.nombre_profesor}}</td>
+        <td>{{x.email_profesor}}</td>
+        <td>{{x.telefono_profesor}}</td>
+          <td>{{x.nombre_lecciones}}</td>
+           <td><i class="fas fa-cloud"></i>
+  <i class="fas fa-coffee"></i>
+</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
