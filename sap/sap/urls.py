@@ -24,9 +24,9 @@ urlpatterns = [
     path('', login),
     path('perfil/', perfil),
     path('inicio/', inicio),
-    path('registro', registro),
-    path('contraseña', contraseña),
-    path('recuperada', recuperada),
-    path('alumnos', alumnos),
+    path('registro/', registro),
+    path('contraseña/', contraseña),
+    path('recuperada/', recuperada),
+    path('alumnos/', alumnos),
 
 ]
