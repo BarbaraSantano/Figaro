@@ -19,8 +19,6 @@ from django.urls import path
 
 from webapp.views import *
 
-from webapp.views import alumnoNuevo
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', login),
@@ -30,5 +28,5 @@ urlpatterns = [
     path('contraseña/', contraseña),
     path('recuperada/', recuperada),
     path('alumnos/', alumnos, name="alumno"),
-    path('nuevoalumno/', alumnoNuevo, name="nuevoAlumno"),
+    path('alumnos/nuevoalumno/', alumnoNuevo, name="nuevoAlumno"),
 ]
