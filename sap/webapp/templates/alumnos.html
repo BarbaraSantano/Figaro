@@ -47,7 +47,7 @@
                 <tr>
                     <th>Nombre</th>
                     <th>Teléfono</th>
-                    <th>Email</th></th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,6 +56,13 @@
                     <td>{{x.nombre_alumnos}}</td>
                     <td>{{x.telefono_alumnos}}</td>
                     <td>{{x.email_alumnos}}</td>
+                    <td><button type="button" class="button">
+                <a href="">Editar</a>
+            </button>
+                        <button type="button" class="button">
+                <a href="">Eliminar</a>
+            </button>
+                    </td>
                 </tr>
             {% endfor %}
             </tbody>

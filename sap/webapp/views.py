@@ -1,9 +1,10 @@
-from django.shortcuts import render
-from webapp.models import *
 from django.http import HttpResponse
 
-
 # Create your views here.
+from webapp.forms import AlumnosForm
+from django.shortcuts import render, redirect
+from webapp.models import *
+
 
 def login(request):
     # return HttpResponse('Holaaa')
@@ -34,3 +35,16 @@ def recuperada(request):
 def alumnos(request):
     nombre_alumnos = Alumnos.objects.all()
     return render(request, 'alumnos.html', {'alumnos': nombre_alumnos})
+
+def alumnoNuevo(request):
+    if request.method == 'POST':
+        formaAlumnos = AlumnosForm(request.POST)
+        if formaAlumnos.is_valid():
+            formaAlumnos.save()
+            return redirect('alumno')
+
+    else:
+        formaAlumnos = AlumnosForm
+
+        return render(request, 'nuevoAlumno.html', {'foralumno': formaAlumnos})
+
