@@ -35,34 +35,36 @@
         </div>
     </div>
     <div class="lecciones">
-        <h1>Alumnos</h1>
+        <h1>Lecciones</h1>
         <br>
-        <button type="button" class="button">
-                <a href="nuevoalumno/">Añadir Alumno</a>
+        <!--<button type="button" class="button">
+                <a href="nuevoalumno/">Añadir Alumno</a>-->
     </div>
     <div class="tabla">
 
         <table>
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Teléfono</th>
-                    <th>Email</th>
+                    <th>Lecciones</th>
+                    <th>Docente</th>
+                    <th>Horas</th>
+                    <th>Temario</th>
                 </tr>
             </thead>
             <tbody>
-            {% for x in alumnos %}
+            {% for x in lecciones %}
                 <tr>
-                    <td>{{x.nombre_alumnos}}</td>
-                    <td>{{x.telefono_alumnos}}</td>
-                    <td>{{x.email_alumnos}}</td>
-                    <td><button type="button" class="button">
-                <a href="editar/{{x.id}}">Editar</a>
+                    <td>{{x.nombre_lecciones}}</td>
+                    <td>{{x.profesor}}</td>
+                    <td>{{x.horas}}</td>
+                    <td>{{x.temario}}</td>
+                    <!-- <td><button type="button" class="button">
+               <a href="editar/{{x.id}}">Editar</a>
             </button>
                         <button type="button" class="buttonred">
                 <a href="eliminaralumno/{{x.id}}">Eliminar</a>
             </button>
-                    </td>
+                    </td>-->
                 </tr>
             {% endfor %}
             </tbody>
