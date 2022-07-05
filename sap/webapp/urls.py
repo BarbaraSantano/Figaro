@@ -12,6 +12,7 @@ urlpatterns = [
     path('contraseña/', contraseña),
     path('recuperada/', recuperada),
     path('lecciones/', lecciones),
+    path('calificaciones/', calificaciones),
     path('alumnos/', alumnos, name="alumno"),
     path('alumnos/nuevoalumno/', alumnoNuevo, name="nuevoAlumno"),
     path('alumnos/editar/<int:id>', editarAlumno),

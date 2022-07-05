@@ -8,7 +8,7 @@ class Profesor(models.Model):
     nombre_profesor = models.CharField(max_length=255)
 
     def __str__(self):
-        return f'Profesor {self.id} : {self.nombre_profesor}'
+        return f' {self.nombre_profesor}'
 
 class Lecciones(models.Model):
     nombre_lecciones = models.CharField(max_length=255)

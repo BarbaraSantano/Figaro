@@ -35,6 +35,11 @@ def lecciones(request):
     # alumno = Alumnos.objects.order_by()
     return render(request, 'lecciones.html', {'lecciones': nombre_lecciones})
 
+def calificaciones(request):
+    nota = Calificaciones.objects.all()
+    # alumno = Alumnos.objects.order_by()
+    return render(request, 'calificaciones.html', {'calificaciones': nota})
+
 def alumnoNuevo(request):
     if request.method == 'POST':
         formaAlumnos = AlumnosForm(request.POST)

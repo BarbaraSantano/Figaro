@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<!--<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,10 @@
     <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/fontello.css' %}">
-</head>
+</head>-->
 
 <body class="body-menu">
-    <div class="container-home">
-        <div class="btn-menu">
-            <label for="btn-menu" class="icon-menu"></label>
-        </div>
-    </div>
-    <input type="checkbox" id="btn-menu">
-    <div class="container-menu">
-        <div class="cont-menu">
-            <div class="logo">
-               <a href=""><img src='{% static "/img/logo.png" %}' alt=""></a>
-            </div>
-            <nav>
-                <a href="#"> Inicio</a>
-                <a href="#">Lecciones</a>
-                <a href="#">Calificaciones</a>
-                <a href="#">Alumnos</a>
-                <a href="" class="out">Cerrar Sesion</a>
-            </nav>
-            <label for="btn-menu" class="icon-equis"></label>
-        </div>
-    </div>
+{% include "menu.html" %}
     <section>
         <div class="cajas-home">
             <h1>¡Hola, profesor Freddie!</h1>
