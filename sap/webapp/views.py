@@ -14,12 +14,6 @@ def inicio(request):
     # return HttpResponse('Holaaa')
     return render(request, 'home.html')
 
-
-def perfil(request):
-    nombre_profesor = Profesor.objects.all()
-    return render(request, 'perfil.html', {'profesor': nombre_profesor})
-
-
 def registro(request):
     return render(request, 'registro.html')
 
