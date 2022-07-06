@@ -8,13 +8,16 @@
 </head>
 <body>
 
+<h1 class="row justify-content-md-center">Agregar alumno</h1>
 <form method="POST">
-  <div>
-      {{foralumno}}
+  <div class="row mb-3 mt-3 ml-3">
+    {{foralumno}}
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <div class="d-grid gap-2 col-3 mx-auto">
+    <button type="submit" class="btn btn-primary regular-button">Guardar</button>
+  </div>
     {% csrf_token %}
 </form>
-
 </body>
+
 </html>
