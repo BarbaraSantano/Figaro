@@ -22,14 +22,14 @@
     <div class="container-menu">
         <div class="cont-menu">
             <div class="logo">
-                <a href=""><img src='{% static "/img/logo.png" %}' alt=""></a>
+                <a href="{% url "home" %}"><img src='{% static "/img/logo.png" %}' alt=""></a>
             </div>
             <nav>
-                <a href="inicio/"> Inicio</a>
-                <a href="lecciones/">Lecciones</a>
-                <a href="calificaciones/">Calificaciones</a>
-                <a href="alumnos/">Alumnos</a>
-                <a href="/" class="out">Cerrar Sesion</a>
+                <a href="{% url "home" %}">Inicio</a>
+                <a href="{% url "leccion" %}">Lecciones</a>
+                <a href="{% url "notas" %}">Calificaciones</a>
+                <a href="{% url "alumno" %}">Alumnos</a>
+                <a href="{% url "iniciar" %}">Cerrar Sesion</a>
             </nav>
             <label for="btn-menu" class="icon-equis"></label>
         </div>

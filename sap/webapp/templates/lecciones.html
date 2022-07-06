@@ -37,7 +37,10 @@
                     <td>{{x.nombre_lecciones}}</td>
                     <td>{{x.profesor}}</td>
                     <td>{{x.horas}}</td>
-                    <td>{{x.temario}}</td>
+                    <td><button type="button" class="button">
+                        <a target ="_blank" title="Descarga" href= "../../static/img/{{x.temario}}">Descargar</a></button></td>
+
+
                     <!-- <td><button type="button" class="button">
                <a href="editar/{{x.id}}">Editar</a>
             </button>

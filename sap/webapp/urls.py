@@ -6,13 +6,13 @@ from webapp.views import *
 from webapp.views import *
 
 urlpatterns = [
-    path('', login),
-    path('inicio/', inicio),
+    path('', login, name="iniciar"),
+    path('inicio/', inicio, name="home"),
     path('registro/', registro),
     path('contraseña/', contraseña),
     path('recuperada/', recuperada),
-    path('lecciones/', lecciones),
-    path('calificaciones/', calificaciones),
+    path('lecciones/', lecciones, name="leccion"),
+    path('calificaciones/', calificaciones, name="notas"),
     path('alumnos/', alumnos, name="alumno"),
     path('alumnos/nuevoalumno/', alumnoNuevo, name="nuevoAlumno"),
     path('alumnos/editar/<int:id>', editarAlumno),

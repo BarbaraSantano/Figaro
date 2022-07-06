@@ -25,17 +25,25 @@
         <table>
             <thead>
                 <tr>
-                    <th></th>
                     <th>Alumnos</th>
-                    <th>Lecciones</th>
+                    <th>Historia de la música</th>
+                    <th>Armonía</th>
+                    <th>Composición</th>
+                    <th>Acústica</th>
+                    <th>Instrumento</th>
                 </tr>
             </thead>
             <tbody>
             {% for x in calificaciones %}
                 <tr>
+                   <!-- <td>{{x.nota}}</td>-->
+                    <td>{{x.alumnos.nombre_alumnos}}</td>
                     <td>{{x.nota}}</td>
-                    <td>{{x.alumnos}}</td>
-                    <td>{{x.lecciones}}</td>
+                    <td>{{x.nota}}</td>
+                    <td>{{x.nota}}</td>
+                    <td>{{x.nota}}</td>
+                    <td>{{x.nota}}</td>
+                 <!--   <td>{{x.lecciones}}</td>-->
                     <!-- <td><button type="button" class="button">
                <a href="editar/{{x.id}}">Editar</a>
             </button>

@@ -37,7 +37,6 @@ def lecciones(request):
 
 def calificaciones(request):
     nota = Calificaciones.objects.all()
-    # alumno = Alumnos.objects.order_by()
     return render(request, 'calificaciones.html', {'calificaciones': nota})
 
 def alumnoNuevo(request):

@@ -18,19 +18,19 @@
         <div class="cajas-home">
             <h1>¡Hola, profesor Freddie!</h1>
             <div class="caja-1">
-                <a href="alumnos/"><img src='{% static "/img/persona.png" %}' alt="" class="img"></a>
+                <a href="{% url "alumno" %}"><img src='{% static "/img/persona.png" %}' alt="" class="img"></a>
                 <h2 class="titulo">Registrar alumno</h2>
             </div>
             <div class="caja-2">
-                <a href="https://youtube.com"><img src='{% static "/img/libreria6.png" %}' alt="" class="img"></a>
+                <a href="{% url "leccion" %}"><img src='{% static "/img/libreria6.png" %}' alt="" class="img"></a>
                 <h2 class="titulo">Registrar lecciones</h2>
             </div>
             <div class="caja-3">
-                <a href=""><img src='{% static "/img/corregir2.png" %}' alt="" class="img"></a>
+                <a href="{% url "notas" %}"><img src='{% static "/img/corregir2.png" %}' alt="" class="img"></a>
                 <h2>Registrar calificaciones</h2>
             </div>
             <div class="caja-4">
-                <a href=""><img src='{% static "/img/logout.png" %}' alt="" class="img"></a>
+                <a href="{% url "iniciar" %}"><img src='{% static "/img/logout.png" %}' alt="" class="img"></a>
                 <h2 class="titulo">Cerrar Sesión</h2>
             </div>
         </div>
