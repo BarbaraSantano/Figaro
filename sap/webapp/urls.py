@@ -3,8 +3,6 @@ from django.urls import path
 
 from webapp.views import *
 
-from webapp.views import *
-
 urlpatterns = [
     path('', login, name="iniciar"),
     path('inicio/', inicio, name="home"),
