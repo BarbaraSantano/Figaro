@@ -18,27 +18,39 @@
 
     <main class="contenido">
         <h1>Iniciar Sesión</h1>
-        <form class="form_box">
-            <ul>
+        <form class="form_box" method="POST">
+            {% csrf_token %}
+
+            <label for="usuario">Usuario
+                <input class="form_imput" name="username" type="text">
+            </label>
+            <label for="pass">Contraseña
+                <input class="form_imput" name="password" type="password">
+            </label>
+            <br>
+            <br>
+            <button type="submit" class="button">
+                <a href="{% url 'home' %}">LOG IN</a>
+            </button>
+            <!--<ul>
                 <li><input class="form_imput" name="Email" placeholder="Email" type="textform">
                 </li>
                 <li><input class="form_imput" name="Contraseña" placeholder="Contraseña" type="textform">
                 </li>
-            </ul>
+            </ul>--!>
             <br>
-            <button type="button" class="button">
-                <a href="inicio/">LOG IN</a>
-            </button>
             <br>
             <br>
             <a href="contraseña/"> ¿Olvidaste tu contraseña?</a>
             <br>
             <br>
             <br>
-            ¿No tienes cuenta?
+            <div>
+                ¿No tienes cuenta?
             <button type="button" class="button">
-                <a href="registro/">Regístrate</a>
+                <a href="{% url 'registrar' %}">Regístrate</a>
             </button>
+            </div>
         </form>
 
     </main>

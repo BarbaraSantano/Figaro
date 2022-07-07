@@ -6,7 +6,7 @@ from webapp.views import *
 urlpatterns = [
     path('', login, name="iniciar"),
     path('inicio/', inicio, name="home"),
-    path('registro/', registro),
+    path('registro/', registro, name="registrar"),
     path('contraseña/', contraseña),
     path('recuperada/', recuperada),
     path('lecciones/', lecciones, name="leccion"),

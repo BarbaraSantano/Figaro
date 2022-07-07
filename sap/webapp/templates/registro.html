@@ -18,6 +18,14 @@
 
         <main class="contenido">
             <h1>Crear Cuenta</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <table>
+                    {{form}}
+                </table>
+                <button type="submit"> Enviar</button>
+            </form>
+            <!--
             <form class="form_box">
                 <ul>
                     <li><input type="textform" class="form_imput" name="Nombre" placeholder="Nombre Completo">
@@ -35,9 +43,7 @@
                 <button type="submit" class="button">
                     <a href="{% url "iniciar" %}">Crear Cuenta</a>
                 </button>
-            </form>
-
-
+            </form>--!>
 
         </main>
         <aside class="sidebar">
